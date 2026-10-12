@@ -1,0 +1,17 @@
+body.portfolio-locked > :not(.access-gate) { display: none !important; }
+body.portfolio-locked { overflow: auto; }
+.access-gate { min-height: 100svh; display: grid; place-items: center; padding: 36px 22px; background: #f5f4ef; color: #183e37; }
+.access-gate[hidden], .access-lock[hidden] { display: none !important; }
+.access-card { width: min(100%, 440px); }
+.access-monogram { font: 42px Georgia, serif; margin: 0 0 46px; }
+.access-eyebrow { font: 600 11px Arial, sans-serif; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 16px; }
+.access-card h1 { font: 48px/1.07 Georgia, serif; letter-spacing: -.035em; margin: 0 0 22px; }
+.access-intro { font: 16px/1.6 Arial, sans-serif; color: #61716a; margin: 0 0 30px; }
+.access-card label { display: block; font: 600 13px Arial, sans-serif; margin-bottom: 9px; }
+.access-card input { box-sizing: border-box; width: 100%; border: 1px solid #a9b4ab; border-radius: 3px; background: white; color: #183e37; padding: 14px; font: 17px Arial, sans-serif; }
+.access-card input:focus-visible, .access-card button:focus-visible, .access-lock:focus-visible { outline: 3px solid #b66b48; outline-offset: 4px; }
+.access-card button { width: 100%; margin-top: 13px; border: none; border-radius: 3px; padding: 15px 20px; background: #183e37; color: #fff; font: 600 14px Arial, sans-serif; cursor: pointer; }
+.access-card button:disabled { opacity: .55; cursor: wait; }
+.access-error { min-height: 42px; margin: 13px 0 0; color: #964129; font: 13px/1.5 Arial, sans-serif; }
+.access-lock { position: fixed; bottom: 18px; right: 18px; z-index: 100; border: 1px solid #c7d0c7; border-radius: 5px; padding: 10px 15px; background: #f5f4ef; color: #183e37; box-shadow: 0 3px 15px #183e3714; cursor: pointer; font: 12px Arial, sans-serif; }
+@media (max-width: 480px) { .access-card h1 { font-size: 39px; } .access-monogram { margin-bottom: 32px; } }

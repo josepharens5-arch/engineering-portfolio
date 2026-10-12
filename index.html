@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow, noimageindex">
+
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Joseph Arens — electrical engineering student at Boston University. Selected work in PCB design, hardware debugging, a touchless soap dispenser, and an Arduino temperature monitor.">
+  <meta name="theme-color" content="#f5f4ef"><title>Joseph Arens · Electrical Engineering</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css"><script src="./script.js" defer></script>
+<link rel="stylesheet" href="./access.css"><script src="./access.js" defer></script></head>
+<body class="portfolio-locked">
+<section class="access-gate" aria-labelledby="access-title">
+  <div class="access-card">
+    <p class="access-monogram" aria-hidden="true">JA.</p>
+    <p class="access-eyebrow">Joseph Arens / Engineering portfolio</p>
+    <h1 id="access-title">Engineering<br>portfolio.</h1>
+    <p class="access-intro">Enter the portfolio password to view the project documentation.<br><strong>Check resume for password.</strong></p>
+    <form>
+      <label for="portfolio-password">Portfolio password</label>
+      <input id="portfolio-password" name="password" type="password" autocomplete="current-password" required aria-describedby="portfolio-access-error">
+      <button type="submit" disabled>View portfolio →</button>
+      <p class="access-error" id="portfolio-access-error" aria-live="polite"></p>
+      <noscript><p>Please enable JavaScript to use this password screen.</p></noscript>
+    </form>
+  </div>
+</section>
+<button class="access-lock" type="button" hidden>Lock portfolio</button>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="identity" href="./index.html" aria-label="Joseph Arens home"><span class="monogram">JA<span>·</span></span><span>Joseph Arens</span></a><nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="./joseph-arens-resume.docx" download>Résumé <span aria-hidden="true">↗</span></a><a class="nav-contact" href="mailto:josepharens5@gmail.com">Contact <span aria-hidden="true">↗</span></a></nav></header>
+<main id="main">
+<section class="hero wrap">
+  <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> Electrical engineering · Boston University</p><h1>Electrical<br><em>Engineering.</em></h1><p class="intro">I am Joseph Arens, an electrical engineering student at Boston University with experience in PCB design, hardware debugging, and test-system development.</p><a class="button" href="#work">View projects <span aria-hidden="true">↘</span></a><div class="hero-meta"><span>B.S. Electrical Engineering <strong>2028</strong></span><span>Boston, MA <strong>Stillwater, MN</strong></span></div></div>
+  <div class="hero-visual"><span class="visual-label">P2 PUMP ASSEMBLY / 01</span><img src="./pump-assembly.webp" alt="CAD rendering of a vacuum pump on its carrier PCB with a redesigned mounting assembly" width="511" height="453" fetchpriority="high"><div class="visual-caption"><span>P2 pump carrier & mount</span><span>908 Devices · 2026</span></div><span class="visual-cross" aria-hidden="true">+</span></div>
+</section>
+<div class="skills-strip"><div class="wrap"><span>PCB design</span><i aria-hidden="true">/</i><span>Hardware debugging</span><i aria-hidden="true">/</i><span>Test automation</span><i aria-hidden="true">/</i><span>Electromechanical design</span></div></div>
+<section class="work-section wrap" id="work"><div class="section-heading"><div><p class="eyebrow">01 / Selected work</p><h2>Engineering at<br><em>908 Devices.</em></h2></div><p>Internship work spanning a legacy test-station redesign, live pump telemetry, and USB troubleshooting.<br><span class="muted">May 2026 – Present</span></p></div>
+  <a class="featured-project" href="./908.html#burn-in"><div class="project-image"><img src="./board-after.webp" alt="Redesigned P2 pump carrier board in Altium" width="1092" height="748" loading="lazy"><span class="image-note">ALTIUM / CARRIER BOARD REV C</span></div><div class="project-copy"><p class="eyebrow">01 / Hardware + test systems</p><h3>Vacuum-pump<br>burn-in station redesign.</h3><p>Carrier-board redesign, pump-mount development, and a Python monitoring application for a vacuum-pump burn-in rack.</p><div class="tags"><span>Altium</span><span>RS-485</span><span>Python</span></div><span class="text-link">Read the case study <span aria-hidden="true">↗</span></span></div></a>
+  <div class="project-pair"><a class="small-project" href="./908.html#usb"><div class="small-project-image"><img src="./usb-rework.webp" alt="USB cable soldered into a circuit board to isolate the USB 3.0 signal path" width="726" height="673" loading="lazy"><span class="round-arrow" aria-hidden="true">↗</span></div><div class="project-small-copy"><p class="eyebrow">02 / Signal integrity</p><h3>USB 3.0 signal-path investigation.</h3><p>Component-by-component rework to isolate a SuperSpeed connection problem.</p><div class="tags"><span>Board rework</span><span>LTspice</span><span>USB 3.0</span></div></div></a>
+  <a class="small-project" href="./908.html#detection"><div class="small-project-image light-image"><img src="./fet-after.webp" alt="Revised dual-FET component layout for USB water-detection circuitry" width="503" height="675" loading="lazy"><span class="round-arrow" aria-hidden="true">↗</span></div><div class="project-small-copy"><p class="eyebrow">03 / Root-cause investigation</p><h3>USB-C water-detection fault analysis.</h3><p>Tracing a false water-detection fault from controller registers to assembly-sensitive components.</p><div class="tags"><span>USB-C controller</span><span>Manufacturability</span></div></div></a></div>
+  <a class="all-work" href="./908.html">View all 908 Devices projects <span aria-hidden="true">↗</span></a>
+  <div class="section-heading student-project-heading" id="soap-project"><div><p class="eyebrow">Coursework / Boston University</p><h2>Course<br><em>projects.</em></h2></div><p>An automatic soap-dispenser prototype combining an acrylic enclosure, infrared sensing, and linear actuation.<br><span class="muted">EK210 · Fall 2025</span></p></div>
+  <a class="featured-project soap-featured-project" href="./soap-dispenser.html"><div class="project-image soap-project-image"><img src="./soap-front.webp" alt="Completed black acrylic automatic soap dispenser with an orange pump bottle on a workshop bench" width="608" height="1080" loading="lazy"><span class="image-note">TEAM PARLAY / WORKING PROTOTYPE</span></div><div class="project-copy"><p class="eyebrow">04 / Mechanical design + system integration</p><h3>Automatic soap<br>dispenser prototype.</h3><p>A laser-cut acrylic housing, IR sensing, and an actuator-driven bottle pump. I designed the housing and performed most of the final debugging across the structure, code, and wiring.</p><div class="tags"><span>Onshape</span><span>Laser cutting</span><span>System debugging</span></div><span class="text-link">View project and demonstration <span aria-hidden="true">↗</span></span></div></a>
+  <a class="mini-work" id="temperature-project" href="./temperature-monitor.html"><div class="mini-work-image"><img src="./temperature-cad.webp" width="1013" height="666" alt="CAD model of an Arduino room temperature monitor and its enclosure" loading="lazy"></div><div><p class="eyebrow">05 / Embedded electronics</p><h3>Room temperature monitor.</h3><p>An Arduino temperature monitor with a TMP36 sensor, LCD, and threshold alarms. I designed the enclosure, assembled the electronics, and programmed the device.</p><div class="tags"><span>Arduino</span><span>Sensor integration</span><span>CAD</span></div></div><span class="mini-work-arrow" aria-hidden="true">↗</span></a>
+</section>
+<section class="about-section" id="about"><div class="wrap about-grid"><div><p class="eyebrow">02 / Background</p><h2>Education<br>and <em>experience.</em></h2></div><div class="about-copy"><p>I am pursuing a B.S. in Electrical Engineering at Boston University, with expected graduation in May 2028. My internship at 908 Devices includes schematic capture, PCB layout, microcontroller firmware, Python monitoring software, and hardware debugging.</p><p>I compete in pole vault on Boston University’s Division I track and field team and tutor physics and chemistry. Originally from Stillwater, Minnesota, I currently study and work in Boston.</p><div class="about-facts"><div><span>Education</span><strong>Boston University</strong><small>Electrical Engineering · Class of 2028</small></div><div><span>Technical tools</span><strong>Altium · Python · LTspice</strong><small>Arduino · Onshape · SOLIDWORKS</small></div></div></div></div></section>
+<section class="contact-section wrap" id="contact"><p class="eyebrow">03 / Contact</p><h2>Contact <em>information.</em></h2><a class="email-link" href="mailto:josepharens5@gmail.com">josepharens5@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://www.linkedin.com/in/joseph-arens" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="./joseph-arens-resume.docx" download>Download résumé (.docx) ↓</a></div></section>
+</main><footer class="site-footer wrap"><span>© <span data-year>2026</span> Joseph Arens</span><span>Electrical engineering · Boston University</span><a href="#main">Back to top ↑</a></footer>
+</body></html>
